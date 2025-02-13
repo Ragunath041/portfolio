@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.prose {
+  max-width: 65ch;
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+.prose p {
+  margin-bottom: 1.5em;
+}
