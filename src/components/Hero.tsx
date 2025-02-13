@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 text-center overflow-hidden"
     >
       {/* Animated Background Glow */}
       <motion.div
@@ -39,11 +39,11 @@ const Hero = () => {
         animate="animate"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto">
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
           {/* Name with Fade & Scale Animation */}
           <motion.h1
-            className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-4"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -53,7 +53,7 @@ const Hero = () => {
 
           {/* Typing Animation for Subtitle */}
           <motion.p
-            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8"
             initial={{ width: "0%" }}
             animate={{ width: "100%" }}
             transition={{ duration: 1.5, ease: "easeOut" }}
@@ -63,7 +63,7 @@ const Hero = () => {
           </motion.p>
 
           {/* Social Media Icons with Hover Effects */}
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center flex-wrap gap-4 sm:gap-6">
             {[
               { icon: FiGithub, link: "https://github.com/Ragunath041" },
               { icon: FiLinkedin, link: "https://www.linkedin.com/in/ragunath-g-198261227/" },
@@ -75,11 +75,11 @@ const Hero = () => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition-colors shadow-lg"
+                className="p-3 sm:p-4 md:p-5 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition-colors shadow-lg"
                 whileHover="hover"
                 variants={iconVariants}
               >
-                <Icon className="w-8 h-8 text-gray-900 dark:text-white" />
+                <Icon className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10 text-gray-900 dark:text-white" />
               </motion.a>
             ))}
           </div>
