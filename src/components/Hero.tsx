@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 text-center overflow-hidden"
+      className="relative min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 text-center md:text-left overflow-hidden"
     >
       {/* Animated Background Glow */}
       <motion.div
@@ -39,7 +39,7 @@ const Hero = () => {
         animate="animate"
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center md:items-start max-w-3xl mx-auto">
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
           {/* Name with Fade & Scale Animation */}
           <motion.h1
@@ -59,11 +59,11 @@ const Hero = () => {
             transition={{ duration: 1.5, ease: "easeOut" }}
             style={{ overflow: "hidden", whiteSpace: "nowrap" }}
           >
-          Software Engineer
+            Software Engineer
           </motion.p>
 
           {/* Social Media Icons with Hover Effects */}
-          <div className="flex justify-center flex-wrap gap-4 sm:gap-6">
+          <div className="flex justify-center md:justify-start flex-wrap gap-4 sm:gap-6">
             {[
               { icon: FiGithub, link: "https://github.com/Ragunath041" },
               { icon: FiLinkedin, link: "https://www.linkedin.com/in/ragunath-g-198261227/" },
@@ -85,6 +85,20 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Profile Image */}
+      <motion.div
+        className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 mb-6 md:mb-0 md:ml-10"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <img
+          src="src\assets\Ragunath.jpeg" // Replace this with your actual image path
+          alt="Ragunath G"
+          className="w-full h-full object-cover rounded-full border-4 border-primary shadow-xl"
+        />
+      </motion.div>
     </section>
   );
 };
