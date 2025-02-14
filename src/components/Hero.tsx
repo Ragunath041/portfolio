@@ -94,7 +94,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <img
-          src="src\assets\Ragunath.jpeg" // Replace this with your actual image path
+          src="/Ragunath.jpeg" // Replace this with your actual image path
           alt="Ragunath G"
           className="w-full h-full object-cover rounded-full border-4 border-primary shadow-xl"
         />
