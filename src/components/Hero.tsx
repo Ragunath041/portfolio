@@ -59,7 +59,7 @@ const Hero = () => {
             transition={{ duration: 1.5, ease: "easeOut" }}
             style={{ overflow: "hidden", whiteSpace: "nowrap" }}
           >
-            Software Engineering Student & Developer
+          Software Engineer
           </motion.p>
 
           {/* Social Media Icons with Hover Effects */}
