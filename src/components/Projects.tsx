@@ -17,6 +17,27 @@ const projects = [
     github: 'https://github.com/Ragunath041/studyRepo.git'
     // liveLink: 'https://your-study-repo-live-link.com'
   },
+  {
+    "title": "Air Quality Index Prediction",
+    "description": "A comprehensive web application that predicts air quality index (AQI) based on environmental parameters and provides interactive data visualization tools. Features include real-time AQI prediction from pollutant inputs, interactive data exploration with various chart types, and a location-based India map visualization showing state-wise air quality with animated, color-coded representations. The app helps users understand air pollution patterns and make informed decisions about outdoor activities based on air quality predictions.",
+    "tech": [
+        "Python",
+        "Streamlit",
+        "Machine Learning",
+        "scikit-learn",
+        "Decision Tree Regressor",
+        "Pandas",
+        "NumPy",
+        "Plotly",
+        "GeoJSON",
+        "Data Visualization",
+        "Lottie Animations",
+        "Interactive Maps",
+        "Geospatial Analysis"
+    ],
+    "github": "https://github.com/Ragunath041/air_quality.git",
+    "liveLink": "https://airquality-jlb8hqxrbpy7v69yo4sacb.streamlit.app/"
+}
 ];
 
 const Projects = () => {
