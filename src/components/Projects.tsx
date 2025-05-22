@@ -7,8 +7,8 @@ const projects = [
     title: 'Loan Scope',
     description: "Developed LoanScope, a fintech education platform that helps users understand loan processes and credit scores. Implemented secure user authentication using Firebase and created a CIBIL score prediction system with Python and Flask. Built an interactive education module featuring CRUD operations for admin users. Deployed the frontend on Firebase Hosting and the backend on Render, ensuring a seamless user experience.",
     tech: ['Flutter','Firebase','Python', 'Flask','Render'],
-    github: 'https://github.com/Ragunath041/loanscope.git',
-    liveLink: 'https://loanscope-9f38b.web.app/#/login'
+    github: 'https://github.com/Ragunath041/loanscope_backend.git',
+    liveLink: 'https://texo-294a5.web.app'
   },
   {
     title: 'Study Repository',
